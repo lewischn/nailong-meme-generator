@@ -79,26 +79,24 @@ const NailongMemeGenerator = () => {
     img.crossOrigin = 'anonymous';
 
     img.onload = () => {
-      const imgRect = imageContainerRef.current.querySelector('img').getBoundingClientRect();
-      canvas.width = img.width;
-      canvas.height = img.height;
-      const scaleX = img.width / imgRect.width;
-      const scaleY = img.height / imgRect.height;
+    const scaleFactor = 2; 
+    canvas.width = img.width * scaleFactor;
+    canvas.height = img.height * scaleFactor;
 
-      ctx.drawImage(img, 0, 0);
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-      textElements.forEach(textEl => {
-        ctx.font = `bold ${textEl.fontSize * scaleX}px ${textEl.font}`;
-        ctx.fillStyle = textEl.color;
-        ctx.textAlign = 'left';
-        ctx.textBaseline = 'top';
-        if (textEl.stroke) {
-          ctx.strokeStyle = 'black';
-          ctx.lineWidth = (textEl.fontSize * scaleX) / 15;
-          ctx.strokeText(textEl.text, textEl.x * scaleX, textEl.y * scaleY);
-        }
-        ctx.fillText(textEl.text, textEl.x * scaleX, textEl.y * scaleY);
-      });
+    textElements.forEach(textEl => {
+      ctx.font = `bold ${textEl.fontSize * scaleFactor}px ${textEl.font}`;
+      ctx.fillStyle = textEl.color;
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'top';
+      if (textEl.stroke) {
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = (textEl.fontSize * scaleFactor) / 15;
+        ctx.strokeText(textEl.text, textEl.x * scaleFactor, textEl.y * scaleFactor);
+      }
+      ctx.fillText(textEl.text, textEl.x * scaleFactor, textEl.y * scaleFactor);
+    });
 
       const link = document.createElement('a');
       link.download = 'nailong-meme.png';
