@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# 💛 Nailong Meme Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fun and easy-to-use meme generator featuring a collection of 78 Nailong images. Create custom memes by adding draggable text with various fonts, colors, and styling options.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 📚 **Image Library**: Browse through 78 pre-loaded Nailong images
+- 🎲 **Random Image**: Get a random Nailong image with one click
+- 📤 **Upload Custom Images**: Use your own images to create memes
+- ✏️ **Draggable Text**: Add and position text anywhere on the image
+- 🎨 **Text Customization**:
+  - Multiple font options
+  - Adjustable font size (20-120px)
+  - Color picker for text color
+  - Optional black outline for better readability
+- 💾 **Download**: Export your meme as a PNG image
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+```bash
+git clone https://github.com/YOUR_USERNAME/nailong-meme-generator.git
+cd nailong-meme-generator
+```bash
+2. Install dependences: 
+npm install
+```bash
+3. Start the development server:
+bashnpm start
+4. Open http://localhost:3000 in your browser
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Usage
 
-### `npm test`
+Select an Image:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Click "Library" to browse all available images
+Click "Random" for a random image
+Click "Upload your own image!" to use a custom image
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Add Text:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Click "Add Text" to create a new text element
+Drag the text to position it on the image
+Select text to edit its properties in the right panel
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Customize Text:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Edit the text content
+Adjust font size with the slider
+Choose from multiple fonts
+Change text color
+Toggle black outline for better visibility
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Download:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Click "Download Meme" to save your creation as a PNG
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Technologies Used
 
-### Code Splitting
+React
+Lucide React (for icons)
+HTML Canvas API (for image export)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Project Structure
+nailong-meme-generator/
+├── public/
+│   ├── nailongImages/
+│   │   ├── nailong1.jpeg
+│   │   ├── nailong2.jpeg
+│   │   └── ...
+│   └── nalong.jpeg
+├── src/
+│   ├── components/
+│   │   ├── ImageLibrary.js
+│   │   ├── MemeCanvas.js
+│   │   └── TextEditor.js
+│   ├── App.js
+│   └── index.js
+└── package.json
 
-### Analyzing the Bundle Size
+Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+License
+MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with 💛
