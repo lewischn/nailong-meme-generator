@@ -20,53 +20,42 @@ A fun and easy-to-use meme generator featuring a collection of 78 Nailong images
 1. Clone the repository:
 git clone https://github.com/YOUR_USERNAME/nailong-meme-generator.git
 cd nailong-meme-generator
-
-2. Install dependences: 
+2. Install dependencies:
 npm install
-
 3. Start the development server:
-bashnpm start
-
+npm start
 4. Open http://localhost:3000 in your browser
 
-Usage
+## Usage
 
-Select an Image:
+### Select an Image:
+- Click "Library" to browse all available images
+- Click "Random" for a random image
+- Click "Upload your own image!" to use a custom image
 
-Click "Library" to browse all available images
-Click "Random" for a random image
-Click "Upload your own image!" to use a custom image
+### Add Text:
+- Click "Add Text" to create a new text element
+- Drag the text to position it on the image
+- Select text to edit its properties in the right panel
 
+### Customize Text:
+- Edit the text content
+- Adjust font size with the slider
+- Choose from multiple fonts
+- Change text color
+- Toggle black outline for better visibility
 
-Add Text:
+### Download:
+- Click "Download Meme" to save your creation as a PNG
 
-Click "Add Text" to create a new text element
-Drag the text to position it on the image
-Select text to edit its properties in the right panel
+## Technologies Used
 
+- React
+- Lucide React (for icons)
+- HTML Canvas API (for image export)
 
-Customize Text:
+## Project Structure
 
-Edit the text content
-Adjust font size with the slider
-Choose from multiple fonts
-Change text color
-Toggle black outline for better visibility
-
-
-Download:
-
-Click "Download Meme" to save your creation as a PNG
-
-
-
-Technologies Used
-
-React
-Lucide React (for icons)
-HTML Canvas API (for image export)
-
-Project Structure
 nailong-meme-generator/
 ├── public/
 │   ├── nailongImages/
@@ -83,7 +72,10 @@ nailong-meme-generator/
 │   └── index.js
 └── package.json
 
-License
+## License
+
 MIT License
+
+---
 
 Made with 💛
