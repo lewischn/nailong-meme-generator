@@ -56,21 +56,21 @@ npm start
 
 ## Project Structure
 
-nailong-meme-generator/
-├── public/
-│   ├── nailongImages/
-│   │   ├── nailong1.jpeg
-│   │   ├── nailong2.jpeg
-│   │   └── ...
-│   └── nalong.jpeg
-├── src/
-│   ├── components/
-│   │   ├── ImageLibrary.js
-│   │   ├── MemeCanvas.js
-│   │   └── TextEditor.js
-│   ├── App.js
-│   └── index.js
-└── package.json
+- **nailong-meme-generator/**
+  - **public/**
+    - **nailongImages/**
+      - nailong1.jpeg
+      - nailong2.jpeg
+      - ...
+    - nalong.jpeg
+  - **src/**
+    - **components/**
+      - ImageLibrary.js
+      - MemeCanvas.js
+      - TextEditor.js
+    - App.js
+    - index.js
+  - package.json
 
 ## License
 
