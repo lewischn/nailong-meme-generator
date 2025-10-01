@@ -18,7 +18,7 @@ A fun and easy-to-use meme generator featuring a collection of 78 Nailong images
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/YOUR_USERNAME/nailong-meme-generator.git
+git clone https://github.com/lewischn/nailong-meme-generator.git
 cd nailong-meme-generator
 2. Install dependencies:
 npm install
