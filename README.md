@@ -18,15 +18,15 @@ A fun and easy-to-use meme generator featuring a collection of 78 Nailong images
 ## Installation
 
 1. Clone the repository:
-```bash
 git clone https://github.com/YOUR_USERNAME/nailong-meme-generator.git
 cd nailong-meme-generator
-```bash
+
 2. Install dependences: 
 npm install
-```bash
+
 3. Start the development server:
 bashnpm start
+
 4. Open http://localhost:3000 in your browser
 
 Usage
@@ -83,8 +83,6 @@ nailong-meme-generator/
 │   └── index.js
 └── package.json
 
-Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
 License
 MIT License
 
