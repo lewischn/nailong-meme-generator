@@ -4,16 +4,16 @@ A fun and easy-to-use meme generator featuring a collection of 78 Nailong images
 
 ## Features
 
-- 📚 **Image Library**: Browse through 78 pre-loaded Nailong images
-- 🎲 **Random Image**: Get a random Nailong image with one click
-- 📤 **Upload Custom Images**: Use your own images to create memes
-- ✏️ **Draggable Text**: Add and position text anywhere on the image
-- 🎨 **Text Customization**:
+- **Image Library**: Browse through 78 pre-loaded Nailong images
+- **Random Image**: Get a random Nailong image with one click
+- **Upload Custom Images**: Use your own images to create memes
+- **Draggable Text**: Add and position text anywhere on the image
+- **Text Customization**:
   - Multiple font options
   - Adjustable font size (20-120px)
   - Color picker for text color
   - Optional black outline for better readability
-- 💾 **Download**: Export your meme as a PNG image
+- **Download**: Export your meme as a PNG image
 
 ## Installation
 
