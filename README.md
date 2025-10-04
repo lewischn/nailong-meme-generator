@@ -24,7 +24,6 @@ cd nailong-meme-generator
 npm install
 3. Start the development server:
 npm start
-4. Open http://localhost:3000 in your browser
 
 ## Usage
 
