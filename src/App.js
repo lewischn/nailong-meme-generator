@@ -132,6 +132,7 @@ const NailongMemeGenerator = () => {
             textAlign: 'center',
             marginBottom: '8px',
             textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
+            fontFamily: "'Poppins', sans-serif"
           }}
         >
           Nailong Meme Generator
@@ -143,6 +144,7 @@ const NailongMemeGenerator = () => {
             textAlign: 'center',
             marginBottom: '32px',
             fontSize: '18px',
+            fontFamily: "'Poppins', sans-serif"
           }}
         >
           💛Create the perfect Nailong meme!💛
@@ -185,6 +187,7 @@ const NailongMemeGenerator = () => {
                   fontWeight: '500',
                   color: 'white',
                   background: '#3b82f6',
+                  fontFamily: "'Poppins', sans-serif"
                 }}
               >
                 <Upload size={20} /> Upload your own image!
@@ -212,6 +215,7 @@ const NailongMemeGenerator = () => {
                   fontWeight: '500',
                   color: 'white',
                   background: '#22c55e',
+                  fontFamily: "'Poppins', sans-serif"
                 }}
               >
                 <Type size={20} /> Library
@@ -231,6 +235,7 @@ const NailongMemeGenerator = () => {
                   fontWeight: '500',
                   color: 'white',
                   background: '#a855f7',
+                  fontFamily: "'Poppins', sans-serif"
                 }}
               >
                 <Shuffle size={20} /> Random
@@ -250,6 +255,7 @@ const NailongMemeGenerator = () => {
                   fontWeight: '500',
                   color: 'white',
                   background: '#f97316',
+                  fontFamily: "'Poppins', sans-serif"
                 }}
               >
                 <Plus size={20} /> Add Text
@@ -280,6 +286,7 @@ const NailongMemeGenerator = () => {
                 fontSize: '20px',
                 border: 'none',
                 cursor: 'pointer',
+                fontFamily: "'Poppins', sans-serif"
               }}
             >
               💛 Download Meme 💛
