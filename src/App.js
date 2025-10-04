@@ -72,40 +72,46 @@ const NailongMemeGenerator = () => {
     setShowLibrary(false);
   };
 
-  const downloadMeme = () => {
-    const canvas = document.createElement('canvas');
-    const ctx = canvas.getContext('2d');
-    const img = new Image();
-    img.crossOrigin = 'anonymous';
+const downloadMeme = () => {
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  const img = new Image();
+  img.crossOrigin = 'anonymous';
 
-    img.onload = () => {
-    const scaleFactor = 2; 
-    canvas.width = img.width * scaleFactor;
-    canvas.height = img.height * scaleFactor;
+  img.onload = () => {
+    const rect = imageContainerRef.current.getBoundingClientRect();
+
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    const scaleX = img.width / rect.width;
+    const scaleY = img.height / rect.height;
 
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
     textElements.forEach(textEl => {
-      ctx.font = `bold ${textEl.fontSize * scaleFactor}px ${textEl.font}`;
+      ctx.font = `bold ${textEl.fontSize * scaleY}px ${textEl.font}`;
       ctx.fillStyle = textEl.color;
       ctx.textAlign = 'left';
       ctx.textBaseline = 'top';
+
       if (textEl.stroke) {
         ctx.strokeStyle = 'black';
-        ctx.lineWidth = (textEl.fontSize * scaleFactor) / 15;
-        ctx.strokeText(textEl.text, textEl.x * scaleFactor, textEl.y * scaleFactor);
+        ctx.lineWidth = Math.max(2, textEl.fontSize * scaleY / 15);
+        ctx.strokeText(textEl.text, textEl.x * scaleX, textEl.y * scaleY);
       }
-      ctx.fillText(textEl.text, textEl.x * scaleFactor, textEl.y * scaleFactor);
+
+      ctx.fillText(textEl.text, textEl.x * scaleX, textEl.y * scaleY);
     });
 
-      const link = document.createElement('a');
-      link.download = 'nailong-meme.png';
-      link.href = canvas.toDataURL();
-      link.click();
-    };
-
-    img.src = currentImage;
+    const link = document.createElement('a');
+    link.download = 'nailong-meme.png';
+    link.href = canvas.toDataURL();
+    link.click();
   };
+
+  img.src = currentImage;
+};
 
   const selectedText = textElements.find(t => t.id === selectedTextId);
 
